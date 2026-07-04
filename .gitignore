@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.pyc
+venv/
+
+# Node
+node_modules/
+
+# Models
+*.pkl
+
+# Dataset
+*.csv
+*.xlsx
+*.xls
+
+# Environment
+.env
+
+# Jupyter
+.ipynb_checkpoints/
+
+# VS Code
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db

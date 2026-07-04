@@ -1,0 +1,125 @@
+.result-card {
+  background: linear-gradient(165deg, var(--navy-900), var(--navy-950));
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+  border: 1px solid #1c3253;
+}
+
+.result-card__strip {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 20px;
+  background: rgba(0, 0, 0, 0.18);
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 1.2px;
+  color: #7f93b4;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.result-card__led {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #3a4a63;
+  transition: background 0.2s ease, box-shadow 0.2s ease;
+}
+
+.result-card__led--on {
+  background: var(--green-500);
+  box-shadow: 0 0 8px 1px rgba(22, 163, 74, 0.8);
+}
+
+.result-card__body {
+  padding: 26px 26px 20px;
+  position: relative;
+}
+
+.result-card__label {
+  margin: 0 0 14px;
+  font-size: 12.5px;
+  font-weight: 500;
+  color: #93a5c2;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+}
+
+.result-card__reading {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  min-height: 64px;
+}
+
+.result-card__value {
+  font-family: var(--font-mono);
+  font-size: 52px;
+  font-weight: 600;
+  color: #eaf3ff;
+  letter-spacing: 0.5px;
+  line-height: 1;
+  text-shadow: 0 0 18px rgba(94, 168, 255, 0.35);
+}
+
+.result-card__unit {
+  font-family: var(--font-mono);
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--blue-500);
+  letter-spacing: 1px;
+}
+
+.result-card__error {
+  color: #ff9b9b;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.5;
+  margin: 4px 0 0;
+}
+
+.result-card__ticks {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  opacity: 0.5;
+}
+
+.result-card__ticks span {
+  width: 1px;
+  height: 8px;
+  background: #3a4a63;
+}
+
+.result-card__footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 14px 26px 18px;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.result-card__meta {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.result-card__meta--right {
+  text-align: right;
+}
+
+.result-card__meta-label {
+  font-size: 10.5px;
+  color: #647896;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+}
+
+.result-card__meta-value {
+  font-family: var(--font-mono);
+  font-size: 12.5px;
+  font-weight: 600;
+  color: #d3e0f2;
+}

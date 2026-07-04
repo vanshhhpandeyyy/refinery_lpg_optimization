@@ -1,0 +1,89 @@
+/* ==========================================================
+   IOCL LPG Prediction Dashboard — Design Tokens
+   Industrial control-room aesthetic: navy / blue / gray / white
+   ========================================================== */
+
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600;700&display=swap");
+
+:root {
+  /* --- Core palette --- */
+  --navy-950: #0b1524;   /* deepest — top bar */
+  --navy-900: #10203a;   /* panel headers, sidebar */
+  --navy-800: #16294a;   /* readout bezel */
+  --blue-700: #1a4d8f;   /* primary button (rest) */
+  --blue-600: #2064b0;   /* primary button (hover) */
+  --blue-500: #2f7bcf;   /* accents, links, focus ring */
+  --blue-100: #e3edf9;   /* light accent fill */
+
+  --gray-50:  #f4f6f9;   /* page background */
+  --gray-100: #eaeef3;   /* input background */
+  --gray-200: #dbe2ea;   /* borders */
+  --gray-300: #c3cddb;   /* stronger borders */
+  --gray-500: #64748b;   /* secondary text */
+  --gray-700: #3a4657;   /* body text */
+  --gray-900: #1a2330;   /* headings / primary text */
+
+  --white: #ffffff;
+
+  --green-500: #16a34a;  /* live / success status */
+  --green-100: #e3f7e9;
+  --red-500:  #d64545;   /* validation / error */
+  --red-100:  #fbe7e7;
+  --amber-500:#c8860d;
+
+  /* --- Typography --- */
+  --font-ui:   "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-mono: "IBM Plex Mono", "SFMono-Regular", Menlo, Consolas, monospace;
+
+  /* --- Elevation --- */
+  --shadow-sm: 0 1px 2px rgba(16, 32, 58, 0.06);
+  --shadow-md: 0 4px 14px rgba(16, 32, 58, 0.08);
+  --shadow-lg: 0 12px 28px rgba(16, 32, 58, 0.14);
+  --shadow-inset: inset 0 2px 6px rgba(0, 0, 0, 0.35);
+
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+}
+
+body {
+  background: var(--gray-50);
+  color: var(--gray-900);
+  font-family: var(--font-ui);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-ui);
+  margin: 0;
+  color: var(--gray-900);
+}
+
+button {
+  font-family: inherit;
+}
+
+/* Visible keyboard focus everywhere */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible {
+  outline: 2px solid var(--blue-500);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.001ms !important;
+    transition-duration: 0.001ms !important;
+  }
+}
