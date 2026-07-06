@@ -1,6 +1,0 @@
-Add the IndianOil logo file here as: indianoil-logo.png
-(public/indianoil-logo.png)
-
-Navbar.jsx already points to /indianoil-logo.png - no code changes needed.
-If the file is missing, the navbar will automatically show an "IOCL" text
-badge instead so the app never breaks.
